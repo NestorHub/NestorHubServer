@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <RootNamespace>NestorHub.Server</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Kopigi.Utils" Version="2.1.201902.1" />
+    <PackageReference Include="Microsoft.ApplicationInsights.NLogTarget" Version="2.17.0" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
+    <PackageReference Include="Microsoft.Extensions.Logging.ApplicationInsights" Version="2.17.0" />
+    <PackageReference Include="NestorHub.Common.Api" Version="1.0.1" />
+    <PackageReference Include="NestorHub.Sentinels.Api" Version="1.5.0" />
+    <PackageReference Include="NLog" Version="4.7.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SentinelsLibrary\Sentinels.Domain\Sentinels.Domain.csproj" />
+    <ProjectReference Include="..\SentinelsLibrary\Sentinels.Infra\Sentinels.Infra.csproj" />
+    <ProjectReference Include="..\ServerLibrary\Server.Domain\Server.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
